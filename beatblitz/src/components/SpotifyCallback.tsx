@@ -19,7 +19,7 @@ const SpotifyCallback = () => {
 
         if (token) {
             localStorage.setItem('spotify_token', token);  // localStorage stores data in the users browser 
-            navigate('/');  // redirect to home page
+            navigate('/Dashboard');  // redirect to dashboard
         } else {
             console.error('Failed to get access token.');
         };
